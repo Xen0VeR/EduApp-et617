@@ -1,0 +1,12 @@
+2025-08-11T20:11:38.151Z,sss,IMAGE_CLICK,course image clicked,::1
+2025-08-11T20:11:41.978Z,sss,LOGOUT,user clicked logout,::1
+2025-08-11T20:12:53.081Z,anonymous,VIDEO_VIEW,YouTube video loaded,::1
+2025-08-11T20:13:00.427Z,sss,REGISTER,User registered,::1
+2025-08-11T20:13:01.508Z,sss,REGISTER,registered via UI,::1
+2025-08-11T20:13:04.198Z,sss,LOGIN,User logged in,::1
+2025-08-11T20:13:04.203Z,sss,PAGE_VIEW,course page opened,::1
+2025-08-11T20:13:11.557Z,sss,IMAGE_CLICK,course image clicked,::1
+2025-08-11T20:13:11.728Z,sss,IMAGE_CLICK,course image clicked,::1
+2025-08-11T20:13:12.999Z,sss,VIDEO_PLAY,normal video played,::1
+2025-08-11T20:13:14.077Z,sss,VIDEO_PAUSE,normal video paused,::1
+2025-08-11T20:13:15.629Z,sss,QUIZ_ATTEMPT,answer=video;correct=true,::1

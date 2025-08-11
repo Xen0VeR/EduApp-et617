@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Learning Website</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>
+      <img src="./logo.png" alt="Logo" style="vertical-align:middle;margin-right:10px;width:48px;height:48px;">
+      Mini Learning Site
+    </h1>
+
+    <div id="auth" class="card">
+      <div class="tabs">
+        <button id="tab-login" class="tab active">Login</button>
+        <button id="tab-register" class="tab">Register</button>
+      </div>
+      <div id="login-form" class="auth-form">
+        <h2 style="margin-bottom:8px;">Login</h2>
+        <input id="login-username" placeholder="Username" autocomplete="username" />
+        <input id="login-password" placeholder="Password" type="password" autocomplete="current-password" />
+        <button id="btn-login">Login</button>
+      </div>
+      <div id="register-form" class="auth-form hidden">
+        <h2 style="margin-bottom:8px;">Register</h2>
+        <input id="reg-username" placeholder="Username" autocomplete="username" />
+        <input id="reg-password" placeholder="Password" type="password" autocomplete="new-password" />
+        <button id="btn-register">Register</button>
+      </div>
+    </div>
+
+    <div id="course" class="card hidden">
+      <div class="topbar">
+        <div>Logged in as <span id="who"></span></div>
+        <button id="btn-logout" class="link">Logout</button>
+      </div>
+
+      <h2 style="color:#2563eb;margin-top:0;">Course: Fun With DSA</h2>
+      <img id="course-img" src="./course.png" alt="Course" />
+      <p style="font-size:1.13em;">A tiny example course page with an embedded video and a quiz button.</p>
+
+      <div class="video-container">
+        <iframe id="fun-video" width="560" height="315"
+          src="https://www.youtube.com/embed/oz9cEqFynHU?si=9F9LAVIRcKVzbth8"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+
+      <!-- Add normal HTML5 video below the YouTube embed -->
+      <video id="fun-video-normal" width="560" controls style="display:block; margin: 18px auto 0 auto; border-radius:12px; box-shadow:0 2px 8px rgba(37,99,235,0.08);">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="quiz">
+        <h3>Quick Quiz</h3>
+        <p>Which tag is used to include a video in HTML?</p>
+        <button class="quiz-btn" data-answer="video">A: &lt;video&gt;</button>
+        <button class="quiz-btn" data-answer="img">B: &lt;img&gt;</button>
+        <button class="quiz-btn" data-answer="audio">C: &lt;audio&gt;</button>
+      </div>
+    </div>
+
+    <footer>
+      <small>
+        <span style="color:#2563eb;font-weight:500;">Clickstream CSV</span> will be saved server-side as <code>clickstream.csv</code>.
+      </small>
+    </footer>
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>
