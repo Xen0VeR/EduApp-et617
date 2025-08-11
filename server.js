@@ -57,6 +57,14 @@ app.post('/track', (req, res) => {
     res.status(500).json({ status: 'error' });
   }
 });
+// Endpoint to view clickstream logs
+app.get("/view-logs", (req, res) => {
+  const filePath = path.join(__dirname, "clickstream.csv");
+  fs.readFile(filePath, "utf8", (err, data) => {
+    if (err) return res.status(500).send("Error reading log file.");
+    res.type("text/plain").send(data);
+  });
+});
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log('Server running on http://localhost:' + PORT));
